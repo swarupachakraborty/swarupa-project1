@@ -10,7 +10,7 @@ const {authentication,authorize}=require('../Middleware/middleware')
 
 router.post('/login', authorcontroller.login)
 router.post('/authors',authorcontroller.createauthor)
-router.post ('/createBlog',authentication,blogController.createBlog)
+router.post ('/createBlogs',authentication,blogController.createBlog)
 
 router.get ('/getBlog',authentication,blogController.getBlog)
 
